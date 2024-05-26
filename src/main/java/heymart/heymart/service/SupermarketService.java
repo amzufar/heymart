@@ -7,7 +7,10 @@ import java.util.concurrent.CompletableFuture;
 
 public interface SupermarketService {
     CompletableFuture<Supermarket> findById(Long supermarketId);
+
     CompletableFuture<List<Supermarket>> findAll();
+
     Supermarket save(Supermarket supermarket);
+
     void deleteById(Long supermarketId);
 }

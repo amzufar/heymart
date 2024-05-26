@@ -31,7 +31,6 @@ public class SupermarketServiceImpl implements SupermarketService {
         return CompletableFuture.completedFuture(supermarketRepository.findAll());
     }
 
-    @Async
     @Override
     public Supermarket save(Supermarket supermarket) {
         return supermarketRepository.save(supermarket);

@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-public class SupermarketRepositoryTest {
+class SupermarketRepositoryTest {
 
     @Mock
     private SupermarketRepository supermarketRepository;
@@ -50,5 +50,4 @@ public class SupermarketRepositoryTest {
         assertEquals(supermarket, result);
         assertEquals(supermarket.getSupermarketId(), result.getSupermarketId());
     }
-
 }
